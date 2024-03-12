@@ -2,7 +2,7 @@
 /*
 Plugin Name: WPMS List sites
 Plugin URI:  https://github.com/
-Description: For stuff that's magical
+Description: [list-sites] to list sites 
 Version:     1.0
 Author:      Tom Woodward
 Author URI:  https://tomwoodward.us
@@ -19,7 +19,6 @@ function wpls_list_all_the_sites(){
    if(is_user_logged_in()){
       $user_id = get_current_user_id();
       $sites = get_blogs_of_user($user_id);
-      //var_dump($sites);
       $html = '';
       foreach ($sites as $key => $site) {
          // code...
