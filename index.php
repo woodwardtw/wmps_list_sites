@@ -24,8 +24,7 @@ function wpls_list_all_the_sites(){
          // code...
          $title = $site->blogname;
          $url = $site->siteurl;
-         //return "{$title}";
-         $html .= "<li><a href='{$url}'>{$title}</a> - <a href='{$url}/wp-admin'>dashboard</a></li>";
+         $html .= "<li><a href='{$url}'>{$title}</a> - <a href='{$url}/wp-admin/'>dashboard</a></li>";
       }
       return "<ul id='site-list'>{$html}</ul>";
    }
